@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <h1>Welcome to Aiemo Services</h1>
+    <p>Your service request is being processed.</p>
+    
+    <!-- Get Service Button -->
+    <a id="getServiceBtn" class="get-service-btn" target="_blank">Get Service</a>
+
+    <!-- Logout Button -->
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </div>
+
+  <script>
+    // Get stored searchParams
+    const storedParams = localStorage.getItem("searchParams");
+
+    if (!storedParams || storedParams.trim() === "") {
+      window.location.href = "/";
+    }
+
+    // Extract only the 'q' value
+    const searchParams = new URLSearchParams(storedParams);
+    const service = searchParams.get("q");
+
+    // Redirect to home if 'q' is missing
+    if (!service || service.trim() === "") {
+      window.location.href = "/";
+    }
+
+    // Check if authToken exists, else redirect to login
+    const authToken = localStorage.getItem("authToken");
+    if (!authToken) {
+      window.location.href = "login.html";
+    }
+
+    // Set Get Service button link
+    const getServiceBtn = document.getElementById("getServiceBtn");
+    const number = "7247042024";
+    getServiceBtn.href = `https://wa.me/${number}?text=${encodeURIComponent(`Hello Team Aiemo Services I want ${service} Service...`)}`;
+
+    // Logout Functionality
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      localStorage.removeItem("authToken");
+      localStorage.removeItem("searchParams");
+      window.location.href = "login.html";
+    });
+    
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 50px;
+    }
+    
+    .dashboard-container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+    }
+
+    .get-service-btn, .logout-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .get-service-btn {
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+    }
+
+    .logout-btn {
+      background-color: red;
+      color: white;
+      border: none;
+    }
+  </style>
+
+</body>
+</html>
