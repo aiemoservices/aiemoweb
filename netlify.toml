@@ -1,5 +1,5 @@
 [[redirects]]
 from = "https://aiemoservices.netlify.app/*"
-to = "https://aiemoservices.com"
+to = "https://aiemoservices.com/:splat"
 status = 301
 force = true
