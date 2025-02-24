@@ -1,0 +1,5 @@
+[[redirects]]
+from = "https://aiemoservices.netlify.app/*"
+to = "https://aiemoservices.com"
+status = 301
+force = true
