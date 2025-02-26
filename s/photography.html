@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aiemo Photography Services</title>
+      <script src="/tw.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./s.css">
+</head>
+<body>
+   <header class="py-4 bg-black sm:py-6" x-data="{expanded: false}">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        <div class="shrink-0">
+          <a
+            href="/"
+            title=""
+            class="flex"
+            style="font-size: 2rem; color: #9b83ee; font-weight: bold"
+          >
+          <img src="../logo.png" style="width: 150px; justify-self: center; object-fit: cover;">
+          </a>
+        </div>
+
+
+        <div class="navOpen" id="openNav" style="justify-content: left; font-size: 1.5rem; cursor: pointer;" onclick="toggleNavbar()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+
+        <!-- navbar mobile -->
+
+
+
+<div class="navbar" id="navbar">
+<div class="closeNavMob" onclick="toggleNavbar()"><i class="fa-solid fa-x"></i></div>
+<div class="section firstF">
+  <a href="/">Home</a>
+  <a href="../about.html">About</a>
+  <a href="../#services">Services</a>
+  <a href="../coming.html">Products</a>
+  <a href="../coming.html">Door to Door</a>
+  <a href="../careers.html">Careers</a>
+</div>
+
+<div class="section secondF">
+  <a href="../login.html">Login</a>
+  <a href="../signup.html">Signup</a>
+  <a href="../privacy.html">Privacy</a>
+</div>
+
+<div class="social-links thirdF">
+  <a href="#"><i class="fab fa-facebook"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+
+<script>
+function toggleNavbar() {
+  const navbar = document.getElementById('navbar');
+  navbar.classList.toggle('open');
+}
+</script>
+
+
+        <nav
+          class="hidden ml-10 mr-auto space-x-10 lg:space-x-12 md:flex md:items-center md:justify-center lg:justify-center w-full mgClass"
+        >
+          <a
+            href="/"
+            title=""
+            class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white active"
+          >
+            Home
+          </a>
+
+          <a
+            href="../about.html"
+            title=""
+            class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"
+          >
+            About
+          </a>
+
+          <a
+          href="../#services"
+          title=""
+          class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"
+        >
+              Services
+            </a>
+
+
+            <a
+            href="../coming.html"
+            title=""
+            class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"
+          >
+            Products
+          </a>
+
+
+          <a
+            href="../coming.html"
+            title=""
+            class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"
+          >
+            Door to Door
+          </a>
+          <a
+            href="../careers.html"
+            title=""
+            class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"
+          >
+            Careers
+          </a>
+          <a
+            href="#"
+            title=""
+            class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white upComing"
+          >
+            Future&nbsp;<i class="fa-solid fa-chevron-down"></i>
+            <div class="dropDwn dropUpcoming">
+              <img src="https://images.pexels.com/photos/3843284/pexels-photo-3843284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+              <ul>
+                <li>Aiemo Travel Agency</li>
+                <li>Aiemo Catering Services</li>
+                <li>Sell Your E-Waste</li>
+                <li>Sell Scrap</li>
+                <li>Aiemo Painting Services</li>
+              </ul>
+            </div>
+          </a>
+        </nav>
+
+        <div
+          class="relative hidden md:items-center md:justify-center md:inline-flex group"
+        >
+          <div
+            class="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"
+          ></div>
+          <a
+            href="../login.html"
+            title=""
+            class="relative inline-flex items-center justify-center px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full"
+            role="button"
+          >
+            Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<script>
+  const servicedetails123 = {
+    "Wedding Photography": {
+        title: "Wedding Photography",
+        description: "Capture your special day with stunning, timeless photos.",
+        link: "#",
+        src: "https://images.pexels.com/photos/3872626/pexels-photo-3872626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "Portrait Photography": {
+        title: "Portrait Photography",
+        description: "Beautiful portraits that highlight your personality.",
+        link: "#",
+        src: "https://images.pexels.com/photos/30008368/pexels-photo-30008368/free-photo-of-modern-streetwear-fashion-portrait-on-shipping-container.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "Event Photography": {
+        title: "Event Photography",
+        description: "Professional coverage for all your events.",
+        link: "#",
+        src: "https://images.pexels.com/photos/3143850/pexels-photo-3143850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "Product Photography": {
+        title: "Product Photography",
+        description: "Showcase your products with high-quality images.",
+        link: "#",
+        src: "https://images.pexels.com/photos/1667071/pexels-photo-1667071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "Travel Photography": {
+        title: "Cinematography",
+        description: "Scenic shots from breathtaking locations worldwide.",
+        link: "#",
+        src: "https://images.pexels.com/photos/2916820/pexels-photo-2916820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "Fashion Photography": {
+        title: "Fashion Photography",
+        description: "Stylish and creative fashion shoots for brands and individuals.",
+        link: "#",
+        src: "https://images.pexels.com/photos/30819871/pexels-photo-30819871/free-photo-of-dramatic-black-and-white-male-portrait-in-studio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "Photo Editing": {
+        title: "Photo Editing",
+        description: "Delicious visuals that bring your dishes to life.",
+        link: "#",
+        src: "https://images.pexels.com/photos/56759/pexels-photo-56759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "Album Designing": {
+        title: "Album Design",
+        description: "Cherish your family moments with beautiful portraits.",
+        link: "#",
+        src: "https://images.pexels.com/photos/7015066/pexels-photo-7015066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "Real Estate Photography": {
+        title: "Real Estate Photography",
+        description: "Highlight your property with stunning visuals.",
+        link: "#",
+        src: "https://images.pexels.com/photos/4451433/pexels-photo-4451433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "Drone Photography": {
+        title: "Drone Photography",
+        description: "Unique aerial shots to showcase landscapes or properties.",
+        link: "#",
+        src: "https://images.pexels.com/photos/336232/pexels-photo-336232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "Video Editing": {
+        title: "Video Editing",
+        description: "Unique aerial shots to showcase landscapes or properties.",
+        link: "#",
+        src: "https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+  };
+
+  function showDetails123(service) {
+  const width = window.innerWidth;
+    if (width<769) {
+      document.querySelector(".details123").style.display = "flex";
+      document.querySelector(".services1234").style.display = "none";
+    }
+
+    document.querySelector(".details123 h3").textContent = servicedetails123[service].title;
+    document.querySelector(".details123 p").textContent = servicedetails123[service].description;
+    document.querySelector(".details123 a").href = "/login.html?q=" + service
+    document.querySelector(".details123 img").src = servicedetails123[service].src;
+  }
+
+  function goBack() {
+    const width = window.innerWidth;
+    if (width<769) {
+      document.querySelector(".details123").style.display = "none";
+      document.querySelector(".services1234").style.display = "flex";
+    }
+  }
+
+</script>
+
+<h1 class="headermin">AIEMO <span class="color1">PHOTOGRAPHY</span> SERVICE<span class="underStand">S</span></h1>
+
+
+<div class="containerContains123">
+<div class="container123">
+  <div class="services1234">
+  	<small class="mobileOnly">Please choose a service...</small>
+    <div onclick="showDetails123('Wedding Photography')">Wedding Photography</div>
+    <div onclick="showDetails123('Portrait Photography')">Portrait Photography</div>
+    <div onclick="showDetails123('Event Photography')">Event Photography</div>
+    <div onclick="showDetails123('Product Photography')">Product Photography</div>
+    <div onclick="showDetails123('Fashion Photography')">Fashion Photography</div>
+    <div onclick="showDetails123('Photo Editing')">Photo Editing</div>
+    <div onclick="showDetails123('Album Designing')">Album Designing</div>
+    <div onclick="showDetails123('Real Estate Photography')">Real Estate Photography</div>
+    <div onclick="showDetails123('Drone Photography')">Drone Photography</div>
+    <div onclick="showDetails123('Video Editing')">Video Editing</div>
+  </div>
+  <div class="details123">
+<div class="backButton"><span onclick="goBack()"><i class="fa-solid fa-arrow-left"></i>&nbsp;back</span>
+    <br>
+    <br>
+    <br>
+    </div>
+
+
+    <h3>Select a service</h3>
+    <p>Select a service from the left to see details here.</p>
+    <img src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Services Image">
+<a href="#" target="_blank">Get this service...</a>
+  </div>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social-icon">
+    <li class="social-icon__item">
+      <a class="social-icon__link" href="#">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+    </li>
+    <li class="social-icon__item">
+      <a class="social-icon__link" href="#">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+    </li>
+    <li class="social-icon__item">
+      <a class="social-icon__link" href="#">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+    </li>
+    <li class="social-icon__item">
+      <a class="social-icon__link" href="#">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </li>
+  </ul>
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="../about.html">About</a></li>
+    <li class="menu__item">
+      <a class="menu__link" href="#">Services</a>
+    </li>
+    <li class="menu__item"><a class="menu__link" href="../careers.html">Careers</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+  </ul>
+  <p>&copy;2024 Aiemo Services | All Rights Reserved</p>
+</footer>
+<script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+
+</body>
+</html>
