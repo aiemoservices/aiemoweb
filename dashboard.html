@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aiemo Services | Dashboard</title>
+  <title>AIEMO Services | Dashboard</title>
+  <link rel="icon" type="image/png" href="favico.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <div class="dashboard-container">
-    <h1>Welcome to Aiemo Services</h1>
+    <h1>Welcome to AIEMO Services</h1>
     <p>Your service request is being processed.</p>
+    <p>The &quote;Get Service&quote; Button will lead you to whatsapp requesting the following service.<span class="serveName"></span></p>
     
     <!-- Get Service Button -->
     <a id="getServiceBtn" class="get-service-btn" target="_blank">Get Service</a>
@@ -45,8 +47,8 @@
     // Set Get Service button link
     const getServiceBtn = document.getElementById("getServiceBtn");
     const number = "7247042024";
-    getServiceBtn.href = `https://wa.me/${number}?text=${encodeURIComponent(`Hello Team Aiemo Services I want ${service} Service...`)}`;
-
+    getServiceBtn.href = `https://wa.me/${number}?text=${encodeURIComponent(`Hello Team AIEMO Services I want ${service} Service...`)}`;
+    document.querySelector(".serveName").innerText = service;
     // Logout Functionality
     document.getElementById("logoutBtn").addEventListener("click", () => {
       localStorage.removeItem("authToken");
