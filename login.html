@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aiemo Services | Login Page</title>
+  <title>AIEMO Services | Login Page</title>
   <link rel="stylesheet" href="login.css">
+  <link rel="icon" type="image/png" href="favico.png">
 </head>
 <body>
   <div class="exit"><a href="/" id="exitButton">&#10005;</a></div>
@@ -23,7 +24,7 @@
 
     <!-- Privacy Policy -->
     <p class="privacy-policy">
-      By signing in, you've accepted our <a href="#">Privacy Policy</a>.
+      By signing in, you've accepted our <a href="/privacy.html">Privacy Policy</a>.
     </p>
 
     <!-- Link to Sign-Up Page -->
@@ -52,7 +53,7 @@
 
     // Set exit button to previous page
     const previousPage = document.referrer;
-    document.querySelector("#exitButton").href = previousPage || "/";
+    document.querySelector("#exitButton").href = "/";
 
     // Handle Login Form Submission
     document.querySelector("#loginForm").addEventListener("submit", async function(event) {
