@@ -117,17 +117,6 @@
   .switch-form a:hover {
     text-decoration: underline;
   }
-  .exit {
-    position: fixed;
-    top: 30px;
-    right: 40px;
-
-    a {
-      text-decoration: none;
-      color: #969696;
-      font-size: 1.2rem;
-    }
-  }
 
 
   
@@ -241,10 +230,10 @@
     position: fixed;
     top: 30px;
     right: 40px;
+  }
 
-    a {
+  .exit a {
       text-decoration: none;
       color: #969696;
       font-size: 1.2rem;
     }
-  }
