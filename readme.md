@@ -2,7 +2,7 @@
 
 <img src="https://aiemoservices.com/logo.png" alt="aiemoservices" width="150px">
 
-(Aiemoservices Offcial Repo)
+(Aiemoservices Official Repo)
 
 <a href="https://aiemoservices.com" target="_blank">Aiemoservices</a>
 
